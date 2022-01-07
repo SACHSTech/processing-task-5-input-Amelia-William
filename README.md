@@ -40,3 +40,59 @@ Demonstrates > 7 learning objectives
 3. Take a screenshot of your work and upload it to the Google Classroom assignment post
 4. In the google doc attached to the assignment, complete the Learning Objectives checklist by adding a brief description about how you demonstrated the learning objective (1-2 lines).
 
+import processing.core.PApplet;
+
+public class Sketch extends PApplet {
+	
+  public void settings() {
+	// put your size call here
+    size(500, 500);
+  }
+
+  public void setup() {   
+  }
+  
+  public void mouseDragged() {
+      
+    stroke(89, 143, 74);
+    fill(89, 143, 74);
+    ellipse(mouseX, mouseY, 100, 100);
+
+  }
+
+  public void mouseClicked() {
+
+    stroke(255, 209, 233);
+    fill(255, 209, 233);
+    ellipse(200, 200, 100, 100);
+    ellipse(300, 200, 100, 100);
+    ellipse(200, 300, 100, 100);
+    ellipse(300, 300, 100, 100);
+    stroke(255, 242, 158);
+    fill(2255, 242, 158);
+    ellipse(250, 250, 100, 100);
+    
+  }
+
+  public void draw() {
+
+    if (keyPressed) {
+      background(153, 228, 255);
+    }else if (key == 's') {
+      stroke(252, 239, 119);
+      fill(252, 239, 119);
+      ellipse(30, 30, 150, 150);
+    }else if (keyCode == UP) {
+      stroke(255, 255, 255);
+      fill(255, 255, 255);
+      ellipse(400, 120, 50, 50);
+      ellipse(360, 120, 50, 50);
+      ellipse(320, 120, 50, 50);
+      ellipse(280, 120, 50, 50);
+      ellipse(380, 90, 50, 50);
+      ellipse(340, 90, 50, 50);
+      ellipse(300, 90, 50, 50);
+      ellipse(340, 70, 75, 75);
+    }
+  }
+}
